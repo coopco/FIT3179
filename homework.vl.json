@@ -4,7 +4,7 @@
   "height": 600,
   "title": "Deaths from natural disasters (2017)",
   "data": {
-    "url": "https://raw.githubusercontent.com/coopco/FIT3179/main/data/countries.topojson",
+    "url": "https://raw.githubusercontent.com/coopco/FIT3179/main/countries.topojson",
     "format": {"type": "topojson", "feature": "custom"}
   },
   "transform": [
@@ -12,7 +12,7 @@
       "lookup": "properties.iso_a3",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/coopco/FIT3179/main/data/deaths-natural-disasters-ihme.csv"
+          "url": "https://raw.githubusercontent.com/coopco/FIT3179/main/deaths-natural-disasters-ihme.csv"
         },
         "key": "Code",
         "fields": ["Deaths"]
