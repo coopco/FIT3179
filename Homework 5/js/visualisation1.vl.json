@@ -74,11 +74,10 @@
     {
       "mark": {
         "type": "text",
-        "align": "right",
-        "baseline": "middle",
+        "align": "left",
         "dx": -4,
-        "yOffset": 20,
-        "fontSize": 12,
+        "yOffset": 10,
+        "fontSize": 11.5,
         "fontStyle": "italic"
       },
       "encoding": {
@@ -86,7 +85,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum.Year == 1925 || datum.Year == 1938 || datum.Year == 1966 || datum.Year == 1974 || datum.Year == 1982 || datum.Year == 2008 || datum.Year == 2019",
+            "test": "datum.Year == 1925 || datum.Year == 1966 || datum.Year == 1974 || datum.Year == 1982 || datum.Year == 2008", 
             "value": 1
           },
           "value": 0
@@ -94,5 +93,5 @@
       }
     }
   ],
-  "config": {}
+  "config": {"legend": {"disable": true}}
 }
