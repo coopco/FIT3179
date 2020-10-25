@@ -16,22 +16,22 @@
 <h1>An Example of Multiple Visualisations</h1>
 
 <h2>This is the first visualisation</h2>
-<div id="choropleth_map"></div>
+<div id="vis1"></div>
 
 <h2>This is the second visualisation</h2>
-<div id="scatter_plot"></div>
+<div id="vis2"></div>
 
 <script type="text/javascript">
   
   var vis1 = "js/visualisation1.vl.json";
   
-  vegaEmbed('#visualisation1', vis1).then(function(result) {
+  vegaEmbed('#vis1', vis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
   var vis2 = "js/visualisation2.vl.json";
   
-  vegaEmbed('#visualisation2', vis2).then(function(result) {
+  vegaEmbed('#vis2', vis2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
